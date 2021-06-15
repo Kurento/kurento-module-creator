@@ -30,7 +30,7 @@ Depends:
  ${misc:Depends},
 Suggests:
  ${maven:OptionalDepends},
-Description: Kurento Module Creator
+Description: Module Creator for use with Kurento
  This tool generates client stubs in different languages for communication
  with the Kurento Media Server, using a JSON-RPC API and language-dependent
  templates.
