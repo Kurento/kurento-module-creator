@@ -1,3 +1,6 @@
 ---
+Bug-Database: https://github.com/Kurento/bugtracker/issues
+Bug-Submit: https://github.com/Kurento/bugtracker/issues/new
+Changelog: https://github.com/Kurento/kurento-module-creator/commits/master
 Repository: https://github.com/Kurento/kurento-module-creator.git
 Repository-Browse: https://github.com/Kurento/kurento-module-creator
