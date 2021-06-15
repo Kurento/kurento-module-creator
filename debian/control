@@ -1,8 +1,7 @@
 Source: kurento-module-creator
 Priority: optional
 Maintainer: Kurento <kurento@googlegroups.com>
-Build-Depends: debhelper-compat (=13),
- build-essential,
+Build-Depends: debhelper-compat (= 13),
  default-jdk-headless,
  maven (>= 3.0),
  maven-debian-helper (>= 1.5)
