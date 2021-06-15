@@ -25,6 +25,7 @@ Package: kurento-module-creator
 Architecture: all
 Depends:
  default-jdk-headless,
+ jarwrapper,
  maven (>= 3.0),
  ${maven:Depends},
  ${misc:Depends},
