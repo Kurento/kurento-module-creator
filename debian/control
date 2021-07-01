@@ -1,11 +1,11 @@
 Source: kurento-module-creator
 Priority: optional
 Maintainer: Kurento <kurento@googlegroups.com>
-Build-Depends: debhelper (>= 9),
- build-essential,
+Build-Depends:
+ debhelper-compat (= 13),
  default-jdk-headless,
  maven (>= 3.0),
- maven-debian-helper (>= 1.5)
+ maven-debian-helper (>= 1.5),
 Build-Depends-Indep:
  junit4,
  libcommons-cli-java,
@@ -14,21 +14,25 @@ Build-Depends-Indep:
  libhamcrest-java,
  libmaven-assembly-plugin-java,
  libslf4j-java,
- libwagon-java
-Standards-Version: 4.0.0
+ libwagon-java,
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
 Vcs-Git: https://github.com/Kurento/kurento-module-creator.git
 Vcs-Browser: https://github.com/Kurento/kurento-module-creator
 Homepage: https://www.kurento.org
+Section: java
 
 Package: kurento-module-creator
 Architecture: all
-Section: java
-Depends: ${misc:Depends},
- ${maven:Depends},
+Depends:
  default-jdk-headless,
- maven (>= 3.0)
-Suggests: ${maven:OptionalDepends}
-Description: Kurento Module Creator
+ jarwrapper,
+ maven (>= 3.0),
+ ${maven:Depends},
+ ${misc:Depends},
+Suggests:
+ ${maven:OptionalDepends},
+Description: Module Creator for use with Kurento
  This tool generates client stubs in different languages for communication
  with the Kurento Media Server, using a JSON-RPC API and language-dependent
  templates.
